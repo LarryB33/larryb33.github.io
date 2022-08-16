@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Traditional Irish Pub">
+    <meta name="keywords" content="traditional, irish, pub, food, bar, rueben, delicious">
+    <meta name="author" content="Tony Joy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Shamrock Jack's Irish Pub</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/shamrock/normalize.css">
+    <link rel="stylesheet" href="/css/shamrock/main.css">
+    <link rel="stylesheet" href="/css/shamrock/mediaquery.css">
+    <link rel="stylesheet" href="/css/shamrock/animations.css">
+  </head>
+  <body>
+
+    <header>
+<!-- MAIN HEADER -->
+      <div class="main_header grid grid_twelve_column">
+        <div class="header_logo">
+          <a href="index.html"><img src="../img/sj_header_logo.png" alt="Shamrock Jack's logo"></a>
+        </div>
+        <div id="side_nav_btn" class="side_menu_button">
+          <!-- placeholder for hamburger menu in top right corner in menu.js file -->
+        </div>
+      </div>
+<!-- END MAIN HEADER -->
+      <nav id="main-nav" class="">
+        <ul class="dropdown_menu_main">
+        </ul>
+      </nav>
+      <div id="side_nav" class="side_menu slide slide-up">
+        <ul class="dropdown_menu_main">
+        </ul>
+      </div>
+    </header>
+
+
+    <main>
+      <!-- WELCOME HEADER -->
+      <div class="background_image">
+        <div id="index_welcome_header" class="welcome_header">
+          <div class="header_words container fade-in">
+            <h1>Contact Us</h1>
+            <p>For reservations, please call us directly at</p>
+            <div class="button_div">
+              <a class="phone_num button" href="tel:15853239310" data-slimstat="5">(585) 323-9310</a>
+            </div>
+          </div>
+          <!-- <div class="arrow_container fade-in">
+            <a href="#contact_form"><img class="down_arrow" src="../img/downarrow.svg" alt=""></a>
+          </div> -->
+        </div>
+      </div>
+      <!-- END WELCOME HEADER -->
+
+    <div class="main-contact-wrapper">
+
+      <section class="wrapper address-info">
+        <div class="contact_bottom">
+          <img src="../img/imagefrontofbuilding.jpg" alt="">
+          <h3>Find Us</h3>
+          <hr>
+          <h3>4554 Culver Road</h3>
+          <p>Rochester (Sea Breeze)<br>
+            New York 14622<br>
+          </div>
+          <div class="button_div">
+            <a class="phone_num button" href="tel:15853239310" data-slimstat="5">(585) 323-9310</a></p>
+          </div>
+        <div class="arrow_container">
+          <a href="#"><img class="up_arrow" src="../img/uparrow.svg" alt=""></a>
+        </div>
+      </section>
+
+      <section class="wrapper email-info">
+        <div class="email-info-container">
+          <div class="contact-label-container">
+            <label for="contact-form" class="contact-form-label">Contact Us</label>
+            <hr>
+            <img src="../img/ireland-grungy.png" alt="">
+            <img src="../img/100-satisfaction.png" alt="">
+          </div>
+          <form id="contact-form" action="https://formspree.io/carolpetzing@yahoo.com" method="post">
+            <div class="form-wrapper">
+              <div class="input-wrapper"><input type="text" class="input" name="name" placeholder="Name" value=""></div>
+              <div class="input-wrapper"><input type="email" class="input" name="email" placeholder="Email Address" value=""></div>
+              <div class="input-wrapper"><input type="tel" class="input" name="phone" placeholder="Phone Number" value=""></div>
+              <div class="input-wrapper"><input type="text" class="input" name="subject" placeholder="Subject" value=""></div>
+              <div class="textarea-wrapper"><textarea name="message" placeholder="Message" id="" cols="30" rows="10"></textarea></div>
+              <div class="button_div">
+                <input type="hidden" name="_next" value="http://www.shamrockjacks.com">
+                <input class="button" type="submit" value="Send Email">
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </div>
+
+      <div class="google_map">
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.9569668157774!2d-77.54670368436905!3d43.23136188762319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6c8372a4d1cdf%3A0x90660306055ca129!2sShamrock+Jack&#39;s+Irish+Pub!5e0!3m2!1sen!2sus!4v1520631035099" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+      </div>
+    </main>
+
+    <footer>
+    </footer>
+    <!-- <div class="up-arrow-container fade-in d-none">
+      <a href="#"><img class="up-arrow" src="../img/uparrow.svg" alt=""></a>
+    </div> -->
+
+
+    <script type="text/javascript" src="js/shamrock/menu.js"></script>
+    <script type="text/javascript" src="js/shamrock/main.js"></script>
+  </body>
+</html>

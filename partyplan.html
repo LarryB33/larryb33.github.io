@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Traditional Irish Pub">
+    <meta name="keywords" content="traditional, irish, pub, food, bar, rueben, delicious">
+    <meta name="author" content="Tony Joy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Shamrock Jack's Late Night</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/shamrock/normalize.css">
+    <link rel="stylesheet" href="/css/shamrock/main.css">
+    <link rel="stylesheet" href="/css/shamrock/mediaquery.css">
+    <link rel="stylesheet" href="/css/shamrock/animations.css">
+  </head>
+  <body>
+
+    <header>
+<!-- MAIN HEADER -->
+      <div class="main_header grid grid_twelve_column">
+        <div class="header_logo">
+          <a href="https://www.shamrockjacks.com/index.html"><img src="../img/sj_header_logo.png" alt="Shamrock Jack's logo"></a>
+        </div>
+        <div id="side_nav_btn" class="side_menu_button">
+          <!-- placeholder for hamburger menu in top right corner in menu.js file -->
+        </div>
+      </div>
+<!-- END MAIN HEADER -->
+      <nav id="main-nav" class="">
+        <ul class="dropdown_menu_main">
+
+        </ul>
+      </nav>
+      <div id="side_nav" class="side_menu slide slide-up">
+        <ul class="dropdown_menu_main slide">
+
+        </ul>
+      </div>
+    </header>
+
+
+    <main>
+      <!-- WELCOME HEADER -->
+      <div class="background_image">
+        <div id="index_welcome_header" class="welcome_header">
+          <div class="header_words container fade-in">
+            <h1>Event Request</h1>
+            <p>Birthday, Retirement, Graduation Party, Rehearsal Dinner, Wedding or Wedding reception come celebrate with us.</p>
+            <p>For event info please fill out the form below and our event coordinator will contact you shortly to finish planning your party or event.</p>
+            <div class="button_div">
+              <a class="phone_num button" href="tel:15853239310" data-slimstat="5">(585) 323-9310</a>
+            </div>
+          </div>
+          <!-- <div class="arrow_container fade-in">
+            <a href="#contact_form"><img class="down_arrow" src="../img/downarrow.svg" alt=""></a>
+          </div> -->
+        </div>
+      </div>
+      <!-- END WELCOME HEADER -->
+
+    <div class="main-contact-wrapper">
+      <section class="wrapper email-info">
+        <div class="email-info-container">
+          <div class="contact-label-container">
+            <label for="event-form" class="contact-form-label">Party / Event Request Form</label>
+            <hr>
+            <img src="../img/ireland-grungy.png" alt="">
+            <img src="../img/100-satisfaction.png" alt="">
+          </div>
+          <!-- <form id="event-form" action="https://formspree.io/carolpetzing@yahoo.com" method="post"> -->
+          <!-- <form id="event-form" action="https://formspree.io/anthonyjjoy@gmail.com" method="post"> -->
+          <form id="event-form" action="https://formspree.io/nancy.shamrocks@gmail.com" method="post">
+            <div class="form-wrapper">
+
+                <section id="event-time-info" class="event-info">
+                  <h3>Time Info</h3>
+                  <div class="event-info-choice">
+                    <label for="date">Date of requested Party / Event</label>
+                    <div class="input-wrapper">
+                      <input type="date" id="date" class="input"
+                          name="date" placeholder="Date of Event" value="">
+                    </div>
+                  </div>
+                  <p class="note">Business hours are 11am to 2am</p>
+                  <small class="note">(select start and end time or start time and duration)</small>
+                  <div class="event-info-choice">
+                    <label for="start-event-time">Start time:</label>
+                    <div class="input-wrapper">
+                      <input type="time" id="start-event-time" name="start-event-time" required>
+                    </div>
+                  </div>
+                  <div class="event-info-choice">
+                    <label for="end-event-time">End time:</label>
+                    <div class="input-wrapper">
+                      <input type="time" id="end-event-time" name="end-event-time" required>
+                    </div>
+                  </div>
+                  <!-- <div class="event-info-choice">
+                    <label for="event-duration">Event duration:</label>
+                    <div class="input-wrapper">
+                      <select name="times">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                      </select>
+                    </div>
+                  </div> -->
+                </section>
+
+
+                <section id="event-contact-info" class="event-info">
+                  <h3>Contact Info</h3>
+                  <div class="event-info-choice">
+                    <label for="number-of-people">Number of people</label>
+                    <div class="input-wrapper"><input type="text" id="number-of-people" class="input" name="numberOfPeople" placeholder="# of People"></div>
+                  </div>
+                  <div class="event-info-choice">
+                    <label for="type-of-event">Type of Event</label>
+                    <div class="input-wrapper"><input type="text" id="type-of-event" class="input" name="typeOfEvent" placeholder="Type of Event"></div>
+                  </div>
+                  <div class="event-info-choice">
+                    <label for="contact-person">Contact Name</label>
+                    <div class="input-wrapper"><input type="text" id="contact-person" class="input" name="contactPerson" placeholder="Contact Name"></div>
+                  </div>
+                  <div class="event-info-choice">
+                    <label for="email">Contact email</label>
+                    <div class="input-wrapper"><input type="email" id="email" class="input" name="email" placeholder="Email Address" value=""></div>
+                  </div>
+                  <div class="event-info-choice">
+                    <label for="phone">Contact Phone Number</label>
+                    <div class="input-wrapper"><input type="tel" id="phone" class="input" name="phone" placeholder="Phone Number" value=""></div>
+                  </div>
+                </section>
+
+                <section id="event-room-choice" class="event-info">
+                  <h3>Room Selection</h3>
+                  <div class="event-info-choice">
+                    <label for="pub-room">Pub Room:</label>
+                    <input type="radio" name="room-choice" value="pub-room" id="pub-room">
+                  </div>
+                  <div class="event-info-choice">
+                    <label for="main-dining-room">Main Dining Room: </label>
+                    <input type="radio" name="room-choice" value="main-dining" id="main-dining-room">
+                  </div>
+                  <div class="event-info-choice">
+                    <label for="library">Library: </label>
+                    <input type="radio" name="room-choice" value="library" id="library">
+                  </div>
+                  <div class="event-info-choice">
+                    <label for="vineyard">Vineyard: </label>
+                    <input type="radio" name="room-choice" value="vineyard" id="vineyard">
+                  </div>
+                </section>
+
+                <section id="event-menu-choice" class="event-info">
+                  <h3>Menu Choice</h3>
+                  <div class="event-info-choice">
+                    <label for="menu-app">Appetizers: </label>
+                    <input type="radio" name="food-selection" value="appetizers" id="menu-app">
+                  </div>
+                  <div class="event-info-choice">
+                    <label for="menu-reg">Regular Menu: </label>
+                    <input type="radio" name="food-selection" value="regular-menu" id="menu-reg">
+                  </div>
+                </section>
+
+                <section id="event-style-choice" class="event-info">
+                  <h3>Style Choice</h3>
+                  <div class="event-info-choice">
+                    <label for="style-grazing">Grazing Stations: </label>
+                    <input type="radio" name="style-selection" value="grazing-stations" id="style-grazing">
+                  </div>
+                  <div class="event-info-choice">
+                    <label for="style-sitdown">Sit Down: </label>
+                    <input type="radio" name="style-selection" value="sitdown" id="style-sitdown">
+                  </div>
+                </section>
+
+                <section id="event-notes" class="event-info">
+                  <label for="notes">Questions, comments or special requests.....</label>
+                  <div class="textarea-wrapper"><textarea id="notes" name="message" placeholder=" Questions, comments or special requests....." cols="30" rows="10"></textarea></div>
+                </section>
+
+                <div class="button_div">
+                  <input type="hidden" name="_next" value="https://www.shamrockjacks.com">
+                  <input class="button" type="submit" value="Send Email">
+                  <section class="event-info">
+                    <p><small>* please note, this email is a only a request and our event coordinator will be in contact with you shortly through the info provided to finish booking the party.</small></p>
+                    <p><small>** a 48 hour notice is very much appreciated when booking a party</small></p>
+                  </section>
+                </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+      <div class="google_map">
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.9569668157774!2d-77.54670368436905!3d43.23136188762319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6c8372a4d1cdf%3A0x90660306055ca129!2sShamrock+Jack&#39;s+Irish+Pub!5e0!3m2!1sen!2sus!4v1520631035099" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+      </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/shamrock/menu.js"></script>
+    <script type="text/javascript" src="js/shamrock/main.js"></script>
+  </body>
+</html>
