@@ -1,0 +1,403 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .welcome_header {
+    /* color: red; */
+  }
+
+}
+@media only screen and (max-width : 768px) {
+  #rochrocs {
+    display: block;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  /******************/
+  /* GLOBAL */
+  /******************/
+  .grid-template-columns-480 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  /******************/
+  /* END GLOBAL */
+  /******************/
+  /******************/
+  /* MAIN HEADER */
+  /******************/
+  .header_logo {
+    grid-column: 2 / span 5;
+  }
+  .side_menu_button {
+    grid-column: 12;
+  }
+  /******************/
+  /* END MAIN HEADER */
+  /******************/
+
+  /******************/
+  /* WELCOME HEADER */
+  /******************/
+  .welcome_header {
+    /* color: blue; */
+  }
+  .welcome_header h1 {
+    font-size: 3em;
+  }
+  .welcome_header p {
+    font-size: 1.20em;
+  }
+  /******************/
+  /* END WELCOME HEADER */
+  /******************/
+  /******************/
+  /* SECTION A */
+  /******************/
+  #sectionA {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+  /******************/
+  /* END SECTION A */
+  /******************/
+  /******************/
+  /* SECTION C */
+  /******************/
+  .tile1 {
+    grid-column: 1 / span 5;
+  }
+  .tile2 {
+    grid-column: 8 / span 5;
+  }
+  .tile3 {
+    grid-column: 1 / span 5;
+  }
+  .tile4 {
+    grid-column: 8 / span 5;
+  }
+  /******************/
+  /* END SECTION C */
+  /******************/
+  /******************/
+  /* SECTION D */
+  /******************/
+  .sectionD h2 {
+    width: 80%;
+    margin: 40px auto 50px;
+  }
+  .sectionD hr {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .sub-sectionD p {
+    margin: 0 30px;
+  }
+  /******************/
+  /* END SECTION D */
+  /******************/
+  /******************/
+  /*  */
+  /******************/
+  /******************/
+  /*  */
+  /******************/
+
+  #menuPics {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /******************/
+  /* UPPER FOOTER */
+  /******************/
+  .address_footer {
+    grid-column: 1 / span 6;
+  }
+  .know_footer {
+    grid-column: 7 / span 6;
+  }
+  .help_footer {
+    grid-column: 1 / span 6;
+  }
+  .social_media_footer {
+    grid-column: 7 / span 6;
+  }
+  /******************/
+  /* END UPPER FOOTER */
+  /******************/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .welcome_header {
+    /* color: green; */
+  }
+  .welcome_header h1 {
+    font-size: 4em;
+  }
+  .welcome_header p {
+    font-size: 1.4em;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 985px) {
+  /******************/
+  /* GLOBAL */
+  /******************/
+  .grid-template-columns-985 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .grid-template-3columns-985 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-template-2rows-985 {
+    grid-template-rows: auto auto;
+  }
+  /******************/
+  /* END GLOBAL */
+  /******************/
+  /******************/
+  /* MAIN HEADER */
+  /******************/
+  .header_logo {
+    grid-column: 5 / span 4;
+  }
+  .side_menu_button {
+    grid-column: 12;
+  }
+  .side_menu_button,
+  .side_menu {
+    display: none;
+  }
+  /******************/
+  /* MAIN NAV */
+  /******************/
+  nav {
+    height: 42px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  nav a {
+    font-size: .7em;
+    color: #777;
+  }
+  nav a:hover {
+    color: #008757;
+    font-weight: bold;
+  }
+  nav li {
+    background: #fff;
+  }
+  nav li:hover {
+    background: #fff;
+    z-index: 100;
+  }
+  nav ul li a {
+    padding: 10px 10px;
+  }
+  nav ul li ul li a {
+    padding: 14px 15px;
+  }
+  nav ul li {
+    display: inline-block;
+    width: 140px;
+    height: 40;
+    line-height: 40px;
+  }
+  nav ul ul li {
+    position: relative;
+    display: none;
+  }
+  nav ul li:hover ul li {
+    float: left;
+    display: block;
+    z-index: 100;
+    animation: navmenu 500ms forwards;
+  }
+  @keyframes navmenu {
+    0% {
+      opacity: 0;
+      top: 25px;
+    }
+    100% {
+      opacity: 1;
+      top: -1px;
+    }
+  }
+  /******************/
+  /* END MAIN NAV */
+  /******************/
+  /******************/
+  /* END MAIN HEADER */
+  /******************/
+
+  /******************/
+  /* WELCOME HEADER */
+  /******************/
+  .welcome_header {
+    /* color: purple; */
+  }
+  .welcome_header h1 {
+    font-size: 5.5em;
+  }
+  .welcome_header p {
+    font-size: 1.4em;
+  }
+  /******************/
+  /* END WELCOME HEADER */
+  /******************/
+  /******************/
+  /* SECTION A */
+  /******************/
+  #sectionA {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+  #sectionAhead {
+    grid-column: 1 / span 5;
+    font-size: 1.75em;
+    line-height: 2em;
+  }
+  #sectionAbody {
+    grid-column: 1 / span 5;
+  }
+  #sectionApic {
+    grid-column: 7 / span 7;
+  }
+  .sectionA-images-div {
+    grid-column: 7 / span 7;
+  }
+  #sectionApic1 {
+    grid-column: 1 / span 7;
+  }
+  #sectionAbutton {
+    grid-column: 2 / span 2;
+  }
+  #sectionA-button-div {
+    grid-column: 2 /span 4;
+  }
+  #stpractice-event-pic {
+    grid-column: 4 / span 7;
+  }
+  #feature-event {
+    grid-column: 1 / span 12;
+  }
+  /******************/
+  /* END SECTION A */
+  /******************/
+  /******************/
+  /* SECTION B */
+  /******************/
+  .card-piece {
+    height: 500px;
+  }
+  .card-piece img {
+    height: 500px;
+  }
+  .card1 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .card2 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .card3 {
+    grid-row: 1;
+    grid-column: 3;
+  }
+  #words1 {
+    grid-row: 1;
+  }
+  #words2,
+  #words3 {
+    grid-row: 2;
+  }
+  #sectionBbutton {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  /******************/
+  /* END SECTION B */
+  /******************/
+  /******************/
+  /* SECTION C */
+  /******************/
+  .tile1 {
+    grid-column: 1 / span 2;
+  }
+  .tile2 {
+    grid-column: 4 / span 2;
+  }
+  .tile3 {
+    grid-column: 8 / span 2;
+  }
+  .tile4 {
+    grid-column: 11 / span 2;
+  }
+  /******************/
+  /* END SECTION C */
+  /******************/
+  /******************/
+  /* SECTION D */
+  /******************/
+  .sectionD h2 {
+    width: 80%;
+    margin: 40px auto 50px;
+  }
+  .sectionD hr {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .sub-sectionD p {
+    margin: 0 30px;
+  }
+  #sectionDhours {
+    grid-column: 2 / span 5;
+  }
+  #sectionDcontact {
+    grid-column: 7 / span 5;
+  }
+  /******************/
+  /* END SECTION D */
+  /******************/
+  /******************/
+  /*  */
+  /******************/
+  /******************/
+  /*  */
+  /******************/
+  #menuPics {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /******************/
+  /* UPPER FOOTER */
+  /******************/
+  .address_footer {
+    grid-column: 1 / span 3;
+  }
+  .know_footer {
+    grid-column: 4 / span 3;
+  }
+  .help_footer {
+    grid-column: 7 / span 3;
+  }
+  .social_media_footer {
+    grid-column: 10 / span 3;
+  }
+
+
+  /******************/
+  /* END UPPER FOOTER */
+  /******************/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}

@@ -1,0 +1,107 @@
+/*****************/
+/* ANIMATIONS */
+/*****************/
+.fade-up {
+  animation: fadeup 1500ms ease-in-out forwards;
+  /* transform: translateY(-200px); */
+}
+@keyframes fadeup {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.fade-down {
+  animation: fadedown 1500ms ease-in-out forwards;
+}
+@keyframes fadedown {
+  0% {
+    transform: translateY(-200px);
+    scaleX(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    scaleX(1);
+    opacity: 1;
+  }
+}
+.fade-left {
+  animation: fadeleft 1500ms ease-in-out forwards;
+}
+@keyframes fadeleft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.fade-right {
+  animation: faderight 1500ms ease-in-out forwards;
+}
+@keyframes faderight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadein 2000ms ease-in-out forwards;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-out {
+  animation: fadeout 2000ms ease-in-out forwards;
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.scale-inX {
+  animation: scaleinX 2000ms ease-in-out forwards;
+}
+@keyframes scaleinX {
+  0% {
+    scaleX(0.5);
+  }
+  100% {
+    scaleX(1);
+  }
+}
+.slide-down {
+  animation: slidedown 2000ms ease-in-out forwards;
+}
+@keyframes slidedown {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+/*****************/
+/* END ANIMATIONS */
+/*****************/
