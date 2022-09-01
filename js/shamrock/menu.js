@@ -22,7 +22,8 @@ sideNavBtnPlaceHolder.innerHTML = sideNavBtnHTML;
 let navHTML = `
   <li class="main-menu-li"><a class="main-menu-a" href="index.html">Home</a></li>
 `;
-// navHTML += `
+/*
+navHTML += `
 //   <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html">St. Patrick's 2022</a>
 //     <ul class="dropdown_menu_inner">
 //       <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html#irish_menu">Irish Menu</a></li>
@@ -39,6 +40,7 @@ navHTML += `
     </ul>
   </li>
 `;
+*/
 navHTML += `
   <li class="main-menu-li"><a class="main-menu-a" href="tostartshare.html#nav-food-menu">Our Menu</a>
     <ul class="dropdown_menu_inner">
@@ -53,6 +55,7 @@ navHTML += `
       // `;
       navHTML += `
       <li class="main-menu-li"><a class="main-menu-a" href="handhelds.html">Handhelds</a></li>
+      <li class="main-menu-li"><a class="main-menu-a" href="pastas.html">Pastas</a></li>
       <li class="main-menu-li"><a class="main-menu-a" href="entrees.html">Entrees</a></li>
       <li class="main-menu-li"><a class="main-menu-a" href="irish-whiskey-menu.html">Irish Whiskey</a></li>
     </ul>
@@ -155,9 +158,10 @@ navs.forEach(nav => {
 
 let navFoodMenuHTML = `
   <ul class="food-menu-list">
-    <li class="food-nav-li"><a class="food-nav-a" href="tostartshare.html#nav-food-menu">Start & Share</a></li>
+    <li class="food-nav-li"><a class="food-nav-a" href="tostartshare.html#nav-food-menu">Starters</a></li>
     <li class="food-nav-li"><a class="food-nav-a" href="salads.html#nav-food-menu">Salads</a></li>
     <li class="food-nav-li"><a class="food-nav-a" href="handhelds.html#nav-food-menu">Handhelds</a></li>
+    <li class="food-nav-li"><a class="food-nav-a" href="pastas.html#nav-food-menu">Pastas</a></li>
     <li class="food-nav-li"><a class="food-nav-a" href="entrees.html#nav-food-menu">Entrees</a></li>
     `;
     // navFoodMenuHTML += `
