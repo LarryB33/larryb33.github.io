@@ -6,7 +6,7 @@ Whether you're an avid whiskey drinker, or a novice taking their first sips, Iri
 
 Whiskey making in Ireland dates back, at least to the 15th Century. In fact the word "whiskey" comes from the Gaelic phrase *uisce beatha* (pronounced *Ish-key Bee-tha*), which means "water of life". 
 
-Originally distilled by Irish monks in monasteries for *medicinal purposes*, this early take on whiskey would have likely been a variation on what we call moonshine today, a harsh spirit with herbs and spices added for flavor.
+Originally distilled by Irish monks in monasteries for...ahem.. *medicinal purposes*, this early take on whiskey would have likely been a variation on what we call moonshine today, a harsh spirit with herbs and spices added for flavor.
 
 By the 16th Century, whiskey had moved out of the monasteries and was made all over the country. In 1608, King James I granted a whiskey licence to Sir Thomas Phillips. He used this licence to open the Bushmills Distillery in County Antrim. Bushmills is still made today, making it the oldest distillery in the world.
 
