@@ -1,10 +1,23 @@
-# Whiskey Flavor Profiles
-
-## Irish Whiskey
+# Irish Whiskey
 
 Whether you're an avid whiskey drinker, or a novice taking their first sips, Irish whiskies make a great option.
 
-### Characteristics of Irish Whiskey
+## A Quick History of Irish Whiskey
+
+Whiskey making in Ireland dates back, at least to the 15th Century. In fact the word "whiskey" comes from the Gaelic phrase *uisce beatha* (pronounced *Ish-key Bee-tha*), which means "water of life". 
+
+Originally distilled by Irish monks in monasteries for *medicinal purposes*, this early take on whiskey would have likely been a variation on what we call moonshine today, a harsh spirit with herbs and spices added for flavor.
+
+By the 16th Century, whiskey had moved out of the monasteries and was made all over the country. In 1608, King James I granted a whiskey licence to Sir Thomas Phillips. He used this licence to open the Bushmills Distillery in County Antrim. Bushmills is still made today, making it the oldest distillery in the world.
+
+By the end of the 19th Century, thanks to improvements in distilling techniques and the global influence of the British Empire, Irish whiskey had become the most consumed spirit in the world.
+
+A combination of political and economic factors, along with increased production of whiskey in other parts of the world, contributed to a decline in the production and popularity of Irish whiskey in the 20th Century. In the 1880's, there were 28 distilleries operating in Ireland. A century later, the only Irish whiskey labels were: Jameson, Powers, Cork, New Middleton, and Busmills.
+
+However, the last 20 years have seen a resurgence in Irish whiskey. Today, there are 25 disilleries producing in Ireland.
+
+
+## Characteristics of Irish Whiskey
 
 The Irish are very particular about their whiskey. To be considered a true Irish whiskey, the Irish Department of Agriculture has made a list of requirements:
 
@@ -22,7 +35,7 @@ When first distilled, whiskey is a clear liquid that has a strong burning alchoh
 
 However, a big difference between wine and whiskey is, that while a wine will continue to mature after it's been bottled, whiskey stops developing as soon as it leaves the barrel. Therefore, as a general rule, the longer a whiskey is left in the cask, the smoother and more complex the flavor will be.
 
-### How To Appreciate Irish Whiskey
+## How To Appreciate Irish Whiskey
 
 Everyone knows how to taste whiskey right? You just take your glass, yell "Slainte!" and knock it back, right. **WRONG!** This ain't a shot of Fireball in a frat house, champ. This is *Irish Whiskey*. It's liquid art, handed down by God himself to the only people that could be trusted with it. And it's meant to be enjoyed properly with all of your senses.
 
