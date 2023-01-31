@@ -46,6 +46,7 @@ navHTML += `
     <ul class="dropdown_menu_inner">
       <li class="main-menu-li"><a class="main-menu-a" href="tostartshare.html">Start & Share</a></li>
       <li class="main-menu-li"><a class="main-menu-a" href="salads.html">Salads</a></li>
+      <li class="main-menu-li"><a class="main-menu-a" href="soups.html">Soups</a></li>
       `;
       // navHTML += `
       // <li class="main-menu-li"><a class="main-menu-a" href="pizza.html">Pizza & Pasta</a></li>
@@ -55,7 +56,7 @@ navHTML += `
       // `;
       navHTML += `
       <li class="main-menu-li"><a class="main-menu-a" href="handhelds.html">Handhelds</a></li>
-      <li class="main-menu-li"><a class="main-menu-a" href="pastas.html">Pastas</a></li>
+      <li class="main-menu-li"><a class="main-menu-a" href="irish_fare.html">Irish Fare</a></li>
       <li class="main-menu-li"><a class="main-menu-a" href="entrees.html">Entrees</a></li>
       <li class="main-menu-li"><a class="main-menu-a" href="irish-whiskey-menu.html">Irish Whiskey</a></li>
     </ul>
@@ -160,8 +161,9 @@ let navFoodMenuHTML = `
   <ul class="food-menu-list">
     <li class="food-nav-li"><a class="food-nav-a" href="tostartshare.html#nav-food-menu">Starters</a></li>
     <li class="food-nav-li"><a class="food-nav-a" href="salads.html#nav-food-menu">Salads</a></li>
+    <li class="food-nav-li"><a class="food-nav-a" href="soups.html#nav-food-menu">Soups</a></li>
     <li class="food-nav-li"><a class="food-nav-a" href="handhelds.html#nav-food-menu">Handhelds</a></li>
-    <li class="food-nav-li"><a class="food-nav-a" href="pastas.html#nav-food-menu">Pastas</a></li>
+    <li class="food-nav-li"><a class="food-nav-a" href="irish_fare.html#nav-food-menu">Irish Fare</a></li>
     <li class="food-nav-li"><a class="food-nav-a" href="entrees.html#nav-food-menu">Entrees</a></li>
     `;
     // navFoodMenuHTML += `
