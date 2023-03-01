@@ -105,6 +105,7 @@ ul li
 	text-align: justify;
 }
 
+/*
 @media only screen and (max-device-width: 1366px)
 {
   .parallax
@@ -112,7 +113,7 @@ ul li
     background-attachment: scroll;
   }
 }
-
+*/
 
 section
 {
