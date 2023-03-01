@@ -44,7 +44,7 @@ header
 
 #mar_11
 {
-  background-image: url("../1.png");
+  background-image: url("../../img/1.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 50% 100% !important;
@@ -52,7 +52,7 @@ header
 
 #mar_12_a
 {
-  background-image: url("../2.png");
+  background-image: url("../../img/2.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 50% 100% !important;
@@ -60,7 +60,7 @@ header
 
 #mar_12_b
 {
-  background-image: url("../3.png");
+  background-image: url("../../img/3.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 50% 100% !important;
@@ -69,7 +69,7 @@ header
 
 #mar_15
 {
-  background-image: url("../4.png");
+  background-image: url("../../img/4.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 50% 100% !important;
@@ -77,7 +77,7 @@ header
 
 #mar_16
 {
-  background-image: url("../5.png");
+  background-image: url("../../img/5.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 50% 100% !important;
@@ -85,7 +85,7 @@ header
 
 #mar_17
 {
-  background-image: url("../6.png");
+  background-image: url("../../img/6.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 50% 100% !important;
@@ -93,7 +93,7 @@ header
 
 #mar_18
 {
-  background-image: url("../7.png");
+  background-image: url("../../img/7.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 50% 100% !important;
