@@ -105,15 +105,14 @@ ul li
 	text-align: justify;
 }
 
-/*
 @media only screen and (max-device-width: 1366px)
 {
   .parallax
   {
-    background-attachment: scroll;
+ 	background-position: 0% 100% !important;
+
   }
 }
-*/
 
 section
 {
