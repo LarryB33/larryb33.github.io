@@ -1,0 +1,193 @@
+body
+{
+}
+
+a, a:hover
+{
+}
+
+nav
+{
+position:fixed;
+	z-index:999;
+	right:0px;
+	box-sizing: border-box;
+	box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+p.navbar-text
+{
+	margin-top:8px !important;
+}
+
+p.navbar-text, h2
+{
+}
+
+header, section
+{
+	position:relative;
+	padding: 25vh 10%;
+	min-height: 100vh;
+	box-sizing: border-box;
+	box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+	overflow: visible;
+	text-align:justify;
+}
+
+
+header
+{
+}
+
+#mar_11
+{
+  background-image: url("../1.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 100% !important;
+}
+
+#mar_12_a
+{
+  background-image: url("../2.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 100% !important;
+}
+
+#mar_12_b
+{
+  background-image: url("../3.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 100% !important;
+}
+
+
+#mar_15
+{
+  background-image: url("../4.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 100% !important;
+}
+
+#mar_16
+{
+  background-image: url("../5.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 100% !important;
+}
+
+#mar_17
+{
+  background-image: url("../6.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 100% !important;
+}
+
+#mar_18
+{
+  background-image: url("../7.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 100% !important;
+}
+
+ul li
+{
+	list-style-type: none;
+	text-align: justify;
+}
+
+@media only screen and (max-device-width: 1366px)
+{
+  .parallax
+  {
+    background-attachment: scroll;
+  }
+}
+
+
+section
+{
+  font-size:1.5em;
+}
+
+.green
+{
+  background-color:#169B62;
+  color:#fff;
+}
+
+.orange
+{
+  background-color: #FF883E;
+  color:#000;
+}
+
+
+h1, h2
+{
+  font-family: "Macondo";
+  text-align:center;
+  font-weight:bold;
+  font-size:2.5em;
+  padding:20px;
+}
+
+h2
+{
+  font-size:2.25em;
+}
+
+span.scroll
+{
+  font-family: "Macondo";
+
+  text-align:center;
+
+  font-size:1.5em;
+}
+
+section span.scroll
+{
+  font-family: "Macondo";
+
+  text-align:center;
+
+  font-size:3.75em;
+
+  width:100%;
+  
+  margin-left:50%;
+}
+
+
+main > p
+{
+  text-align:center;
+}
+
+main img
+{
+  max-width: 500px;
+}
+
+ul.highlights
+{
+  list-style:none;
+}
+
+ul.highlights > li
+{
+  font-weight:bold;
+  font-size:2.0em;
+  padding:20px;
+}
+
