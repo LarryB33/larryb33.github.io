@@ -96,7 +96,7 @@ header
   background-image: url("../../img/7.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: 50% 100% !important;
+	background-position: 50% 100%;
 }
 
 ul li
@@ -105,11 +105,11 @@ ul li
 	text-align: justify;
 }
 
-@media only screen and (max-device-width: 1366px)
+@media only screen and (max-device-width: 500px)
 {
   .parallax
   {
- 	background-position: 0% 100% !important;
+ 	background-position: 50% 100% !important;
 
   }
 }
