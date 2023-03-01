@@ -38,9 +38,6 @@ header, section
 }
 
 
-header
-{
-}
 
 #mar_11
 {
@@ -112,6 +109,13 @@ ul li
  	background-position: 50% 90% !important;
 
   }
+
+  header img
+  {
+	max-width:500px;
+  }
+	
+
 }
 
 section
