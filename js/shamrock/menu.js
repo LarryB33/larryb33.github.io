@@ -24,10 +24,15 @@ let navHTML = `
 `;
 /*
 navHTML += `
-//   <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html">St. Patrick's 2022</a>
+//   <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html">St. Patrick's 2023</a>
 //     <ul class="dropdown_menu_inner">
-//       <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html#irish_menu">Irish Menu</a></li>
-//       <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html#entertainment">Band Lineup</a></li>
+//       <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html#event_1">March 11th (Parade Day)</a></li>
+//       <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html#event_2">Kid's Day</a></li>
+//       <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html#event_3">Celtic Cross</a></li>
+//       <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html#event_4">First Responders Appreciation</a></li>
+//       <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html#event_5">Silent Disco</a></li>
+//       <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html#event_6">St. Patrick's Day</a></li>
+//       <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html#event_7">The Seven Wonders</a></li>
 //     </ul>
 //   </li>
 //   <li class="main-menu-li"><a class="main-menu-a" href="events-calendar.html">Events Calender</a></li>
