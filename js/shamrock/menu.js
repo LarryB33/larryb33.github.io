@@ -22,7 +22,7 @@ sideNavBtnPlaceHolder.innerHTML = sideNavBtnHTML;
 let navHTML = `
   <li class="main-menu-li"><a class="main-menu-a" href="index.html">Home</a></li>
 `;
-
+/*
 navHTML += `
    <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html">St. Patrick's 2023</a>
      <ul class="dropdown_menu_inner">
@@ -37,6 +37,7 @@ navHTML += `
    </li>
    <li class="main-menu-li"><a class="main-menu-a" href="events-calendar.html">Events Calender</a></li>
  `;
+ */
 /*
 navHTML += `
   <li class="main-menu-li"><a class="main-menu-a" href="stpaddysday.html">St. Patrick's 2022</a>
