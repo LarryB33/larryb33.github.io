@@ -8,12 +8,14 @@ a, a:hover
 
 nav
 {
+/*
   position:fixed;
 	z-index:999;
 	right:0px;
+	transform-style: inherit;
+*/
 	box-sizing: border-box;
 	box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-	transform-style: inherit;
 }
 
 p.navbar-text
@@ -21,10 +23,8 @@ p.navbar-text
 	margin-top:8px ;
 }
 
-p.navbar-text, h2
-{
-}
 
+/*
 header, section
 {
 	position:relative;
@@ -36,85 +36,11 @@ header, section
 	overflow: visible;
 	text-align:justify;
 }
-
-
-
-#mar_11
-{
-  background-image: url("../img/1.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: 50% 100% ;
-}
-
-#mar_12_a
-{
-  background-image: url("../img/2.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: 50% 100% ;
-}
-
-#mar_12_b
-{
-  background-image: url("../img/3.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: 50% 100% ;
-}
-
-
-#mar_15
-{
-  background-image: url("../img/4.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: 50% 100% ;
-}
-
-#mar_16
-{
-  background-image: url("../img/5.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: 50% 100% ;
-}
-
-#mar_17
-{
-  background-image: url("../img/6.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: 50% 100% ;
-}
-
-#mar_18
-{
-  background-image: url("../img/7.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: 50% 100%;
-}
+*/
 
 ul li
 {
 	list-style-type: none;
-	text-align: justify;
-}
-
-@media only screen and (max-device-width: 1366px)
-{
-	.parallax {
-		background-attachment: scroll;
-  	background-position: 50% 100%;
-	}
-
-	header img
-	{
-		max-width:500px;
-	}
-	
-
 }
 
 section
@@ -172,11 +98,6 @@ section span.scroll
 }
 
 
-main > p
-{
-  text-align:center;
-}
-
 main img
 {
   max-width: 500px;
@@ -193,4 +114,3 @@ ul.highlights > li
   font-size:2.0em;
   padding:20px;
 }
-
