@@ -30,12 +30,12 @@ navHTML += `
       <li class="main-menu-li"><a class="main-menu-a" href="soups.html">Soups</a></li>
       `;
        navHTML += `
-       <li class="main-menu-li"><a class="main-menu-a" href="flatbreads.html">Late Night</a></li>
+       <li class="main-menu-li"><a class="main-menu-a" href="flatbreads.html">Flatbreads</a></li>
        `;
       navHTML += `
       <li class="main-menu-li"><a class="main-menu-a" href="handhelds.html">Handhelds</a></li>
       <li class="main-menu-li"><a class="main-menu-a" href="entrees.html">Entrees</a></li>
-      <li class="main-menu-li"><a class="main-menu-a" href="late_night.html">Practice Menu</a></li>
+      <li class="main-menu-li"><a class="main-menu-a" href="late_night.html">Late Night</a></li>
       </ul>
   </li>
   `;
