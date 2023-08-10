@@ -31,12 +31,12 @@ navHTML += `
       `;
        navHTML += `
        <li class="main-menu-li"><a class="main-menu-a" href="flatbreads.html">Late Night</a></li>
-      <li class="main-menu-li"><a class="main-menu-a" href="late_night.html">Practice Menu</a></li>
        `;
       navHTML += `
       <li class="main-menu-li"><a class="main-menu-a" href="handhelds.html">Handhelds</a></li>
       <li class="main-menu-li"><a class="main-menu-a" href="entrees.html">Entrees</a></li>
-    </ul>
+      <li class="main-menu-li"><a class="main-menu-a" href="late_night.html">Practice Menu</a></li>
+      </ul>
   </li>
   `;
   // navHTML += `
