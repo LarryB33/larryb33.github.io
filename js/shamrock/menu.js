@@ -5,81 +5,19 @@ let navFoodMenu = document.querySelector('#nav-food-menu');
 let sideNavBtnPlaceHolder = document.querySelector('#side_nav_btn');
 
 
-let sideNavBtnHTML = `
-  <span class="open_slide_menu">
-    <a href="#" onclick="toggleSlideMenu">
-      <svg width="30" height="30">
-        <path d="M0,5 30,5" stroke="rgba(0,0,0, 0.5)" stroke-width="3"/>
-        <path d="M0,14 30,14" stroke="rgba(0,0,0, 0.5)" stroke-width="3"/>
-        <path d="M0,23 30,23" stroke="rgba(0,0,0, 0.5)" stroke-width="3"/>
-      </svg>
-    </a>
-  </span>
-`;
+let sideNavBtnHTML = '<span class="open_slide_menu"><a href="#" onclick="toggleSlideMenu"><svg width="30" height="30"><path d="M0,5 30,5" stroke="rgba(0,0,0, 0.5)" stroke-width="3"/><path d="M0,14 30,14" stroke="rgba(0,0,0, 0.5)" stroke-width="3"/><path d="M0,23 30,23" stroke="rgba(0,0,0, 0.5)" stroke-width="3"/></svg></a></span>';
+
 sideNavBtnPlaceHolder.innerHTML = sideNavBtnHTML;
 
 // ORIGINAL MENU FOR NORMAL TIMES
-let navHTML = `
-  <li class="main-menu-li"><a class="main-menu-a" href="index.html">Home</a></li>
-`;
-navHTML += `
-  <li class="main-menu-li"><a class="main-menu-a" href="tostartshare.html#nav-food-menu">Our Menu</a>
-    <ul class="dropdown_menu_inner">
-      <li class="main-menu-li"><a class="main-menu-a" href="tostartshare.html">Start & Share</a></li>
-      <li class="main-menu-li"><a class="main-menu-a" href="salads.html">Salads</a></li>
-      <li class="main-menu-li"><a class="main-menu-a" href="soups.html">Soups</a></li>
-      `;
-       navHTML += `
-       <li class="main-menu-li"><a class="main-menu-a" href="flatbreads.html">Flatbreads</a></li>
-       `;
-      navHTML += `
-      <li class="main-menu-li"><a class="main-menu-a" href="handhelds.html">Handhelds</a></li>
-      <li class="main-menu-li"><a class="main-menu-a" href="entrees.html">Entrees</a></li>
-      <li class="main-menu-li"><a class="main-menu-a" href="late_night.html">Late Night</a></li>
-      </ul>
-  </li>
-  `;
-  // navHTML += `
-  // <li class="main-menu-li"><a class="main-menu-a" href="">Alcohol Menu</a>
-  //   <ul class="dropdown_menu_inner">
-  //     <li class="main-menu-li"><a class="main-menu-a" href="http://3.15.197.53/draft_beers/shamrockjacks/1">Draft Beer List</a></li>
-  //     <li class="main-menu-li"><a class="main-menu-a" href="http://3.15.197.53/bottle_beers/shamrockjacks/1">Bottle Beer List</a></li>
-  //     <li class="main-menu-li"><a class="main-menu-a" href="http://3.15.197.53/winelist_menu/shamrockjacks/1">Wine Menu</a></li>
-  //     <li class="main-menu-li"><a class="main-menu-a" href="http://3.15.197.53/winelist_description/shamrockjacks/1">Wine Descriptions</a></li>
-  //     <li class="main-menu-li"><a class="main-menu-a" href="irish-whiskey-menu.html">Irish Whiskey</a></li>
-  //   </ul>
-  // </li>
-  // `;
-  navHTML += `
-  <li class="main-menu-li"><a class="main-menu-a" href="aboutus.html">About Us</a></li>
-  `;
-  // navHTML += `
-  // <li class="main-menu-li"><a class="main-menu-a" href="partyplan.html">Plan a Party</a></li>
-  // `;
-  navHTML += `
-  <li class="main-menu-li"><a class="main-menu-a" href="contactus.html">Contact Us</a></li>
-`;
+let navHTML = '<li class="main-menu-li"><a class="main-menu-a" href="index.html">Home</a></li>';
+
+navHTML += '<li class="main-menu-li"><a class="main-menu-a" href="tostartshare.html#nav-food-menu">Our Menu</a><ul class="dropdown_menu_inner"><li class="main-menu-li"><a class="main-menu-a" href="tostartshare.html">Start & Share</a></li><li class="main-menu-li"><a class="main-menu-a" href="salads.html">Salads</a></li><li class="main-menu-li"><a class="main-menu-a" href="soups.html">Soups</a></li><li class="main-menu-li"><a class="main-menu-a" href="flatbreads.html">Flatbreads</a></li><li class="main-menu-li"><a class="main-menu-a" href="handhelds.html">Handhelds</a></li><li class="main-menu-li"><a class="main-menu-a" href="entrees.html">Entrees</a></li><li class="main-menu-li"><a class="main-menu-a" href="late_night.html">Late Night</a></li></ul></li>';
+
+navHTML += '<li class="main-menu-li"><a class="main-menu-a" href="contactus.html">Contact Us</a></li>';
 ////////// END ORIGINAL MENU
 
 
-//BEGIN COVID MENU
-// let navHTML = `
-//   <li class="main-menu-li"><a class="main-menu-a" href="index.html">Home</a></li>
-//   <li class="main-menu-li"><a class="main-menu-a" href="">Alcohol Menu</a>
-//     <ul class="dropdown_menu_inner">
-//       <li class="main-menu-li"><a class="main-menu-a" href="http://3.15.197.53/draft_beers/shamrockjacks/1">Draft Beer List</a></li>
-//       <li class="main-menu-li"><a class="main-menu-a" href="http://3.15.197.53/bottle_beers/shamrockjacks/1">Bottle Beer List</a></li>
-//       <li class="main-menu-li"><a class="main-menu-a" href="http://3.15.197.53/winelist_menu/shamrockjacks/1">Wine Menu</a></li>
-//       <li class="main-menu-li"><a class="main-menu-a" href="http://3.15.197.53/winelist_description/shamrockjacks/1">Wine Descriptions</a></li>
-//       <li class="main-menu-li"><a class="main-menu-a" href="irish-whiskey-menu.html">Irish Whiskey</a></li>
-//     </ul>
-//   </li>
-//   <li class="main-menu-li"><a class="main-menu-a" href="aboutus.html">About Us</a></li>
-//   <li class="main-menu-li"><a class="main-menu-a" href="contactus.html">Contact Us</a></li>
-// `;
-
-
-//END COVID MENU
 footer.innerHTML = `
   <div id="upper_footer">
     <div class="container grid grid-template-columns-480">
@@ -136,19 +74,17 @@ navs.forEach(nav => {
 
 let navFoodMenuHTML = `
   <ul class="food-menu-list">
-    <li class="food-nav-li"><a class="food-nav-a" href="tostartshare.html#nav-food-menu">Starters</a></li>
-    <li class="food-nav-li"><a class="food-nav-a" href="salads.html#nav-food-menu">Salads</a></li>
-    <li class="food-nav-li"><a class="food-nav-a" href="soups.html#nav-food-menu">Soups</a></li>
-    <li class="food-nav-li"><a class="food-nav-a" href="handhelds.html#nav-food-menu">Handhelds</a></li>
-    <li class="food-nav-li"><a class="food-nav-a" href="irish_fare.html#nav-food-menu">Irish Fare</a></li>
-    <li class="food-nav-li"><a class="food-nav-a" href="entrees.html#nav-food-menu">Entrees</a></li>
-    `;
-    // navFoodMenuHTML += `
-    // <li class="food-nav-li"><a class="food-nav-a" href="kidsmenu.html#nav-food-menu">Kids Menu</a></li>
-    // <li class="food-nav-li"><a class="food-nav-a" href="pizza.html#nav-food-menu">Pizza & Pasta</a></li>
-    // <li class="food-nav-li"><a class="food-nav-a" href="latenightmenu.html#nav-food-menu">Late Night</a></li>
-    // `;
-    navFoodMenuHTML += `
+      <li class="main-menu-li"><a class="main-menu-a" href="tostartshare.html">Start & Share</a></li>
+      <li class="main-menu-li"><a class="main-menu-a" href="salads.html">Salads</a></li>
+      <li class="main-menu-li"><a class="main-menu-a" href="soups.html">Soups</a></li>
+      `;
+       navHTML += `
+       <li class="main-menu-li"><a class="main-menu-a" href="flatbreads.html">Flatbreads</a></li>
+       `;
+      navHTML += `
+      <li class="main-menu-li"><a class="main-menu-a" href="handhelds.html">Handhelds</a></li>
+      <li class="main-menu-li"><a class="main-menu-a" href="entrees.html">Entrees</a></li>
+      <li class="main-menu-li"><a class="main-menu-a" href="late_night.html">Late Night</a></li>
   </ul>
 `;
 if (navFoodMenu != null) {
