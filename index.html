@@ -1,300 +1,721 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<html>
 
-    <meta name="description" content="Traditional Irish Pub">
-    <meta name="keywords" content="traditional, irish, pub, food, bar, rueben, delicious">
-    <meta name="author" content="Tony Joy">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    <title>Shamrock Jack's Irish Pub</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/shamrock/normalize.css">
-    <link rel="stylesheet" href="css/shamrock/main.css">
-    <link rel="stylesheet" href="css/shamrock/mediaquery.css">
-    <link rel="stylesheet" href="css/shamrock/animations.css">
+  <head>
+    
+    <style>
+
+      /* non-standard fonts */
+      @font-face
+      {
+        font-family:rye;
+        src: url(fonts/Rye-Regular.ttf);
+      }
+
+      /* meta styling */
+      body
+      {
+        width:900px;
+        margin:auto;
+        font-family:helvetica;
+        color:#171322;
+        background-color:#d2d1d6;
+      }
+
+      .hide
+      {
+        display:none;
+      }
+
+      h1
+      {
+        font-family: rye;
+        font-size:2.0em;
+        text-align:center;
+      }
+
+      h2
+      {
+        font-family: rye;
+        font-size:1.75em;
+        text-align:left;
+      }
+      
+      img
+      {
+        max-width:600px;
+      }
+
+
+      /* header and nav */
+      header
+      {
+        font-family:rye;
+        text-align:center;
+        font-size:2.0em;
+        height:100px;
+      }
+      
+      img#logo
+      {
+        width:100px;
+        height:100px;
+        margin-left:10px;
+        float:left;
+      }
+
+
+      nav > menu
+      {
+        width:700px;
+        margin-top:20px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:0px;
+        padding-bottom:0px;
+        float:right;
+      }
+      
+      nav > menu > li
+      {
+        display:inline;
+        float:left;
+        padding-left:20px;
+      }
+      
+      nav > menu > li > a
+      {
+        color:#d2d1d6;
+      }
+      
+      nav > menu > li > a:hover
+      {
+        color:#2f3324;
+      }
+
+
+      nav > span
+      {
+        text-align:left;
+        clear:both;
+        display:block;
+      }
+  
+      
+      div.row
+      {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      div.grid_row
+      {
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align:center;
+      }
+
+      div.grid_row h2
+      {
+        text-align:center;
+      }
+
+      .green
+      {
+        color:#d2d1d6;
+        background-color:#2f3324;
+      }
+      
+      .white
+      {
+        color:#171322;
+        background-color:#d2d1d6;
+      }
+
+      .blue
+      {
+        color:#d2d1d6;
+        background-color:#171322;
+        border: 5px solid #2f3324;
+      }
+      
+      main
+      {
+        margin-top:10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        width:100%;
+        margin-bottom:20px;
+      }
+      
+
+      section
+      {
+        padding-top:10px;
+        padding-bottom:10px;
+      }
+      
+      #sidebar
+      {
+        width:290px;
+        font-size:1.0em;
+        text-align:center;
+        position:sticky;
+        font-weight:bold;
+      }
+      
+      #main_content
+      {
+        width:600px;
+      }
+
+      div.event
+      {
+        margin-bottom:25px;
+        width:580px;
+      }
+
+      div.event img
+      {
+        max-width:580px;
+      }
+
+      #hours
+      {
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:5px;
+        padding-right:5px;
+        font-size:0.9em;
+        text-align:left;
+      }
+      
+      address
+      {
+        margin-top:15px;
+        margin-bottom:15px;
+      }
+      
+      ul
+      {
+        border:5px;
+        padding-inline-start: 0px;
+      }
+
+      li
+      {
+        list-style-type:none;
+        padding-top:8px;
+      }
+
+      div.row a
+      {
+        color:#d2d1d6;
+        height:5.0em;
+        text-align:right;
+        text-decoration:none;
+        font-family:rye;
+      }
+
+      span.event_link
+      {
+        display:block;
+        clear:both;
+        color:#d2d1d6;
+        text-align:center;
+        text-decoration:none;
+        font-family:rye;
+        font-weight:bold;
+        font-size:1.5em;
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      div.row a:hover
+      {
+        color:#2f3324;
+      }
+      
+      span.item_price
+      {
+        float:right;
+      }
+
+      footer p
+      {
+        
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+            
+    </style>
   </head>
   <body>
 
-    <header>
+    <header class="blue">
 
-      <!-- MAIN HEADER -->
-      <div class="main_header grid grid_twelve_column">
-        <div class="header_logo">
-          <a href="index.html"><img src="img/sj_header_logo.png" alt="Shamrock Jack's logo"></a>
-        </div>
-        <div id="side_nav_btn" class="side_menu_button">
-          <!-- placeholder for hamburger menu in top right corner in menu.js file -->
-        </div>
-      </div>
-      <!-- END MAIN HEADER -->
-      
-      <nav id="main-nav" class="">
-        <ul class="dropdown_menu_main">
-          <!-- placeholder for dropdown menu in menu.js file-->
-        </ul>
+      <h1 class="hide">Shamrock Jack's Irish Pub</h1>
+
+      <img id="logo" src="img/logo.png" alt="logo">
+
+      <nav>
+        
+        <menu>
+          <li>
+            <a href="#food_menu" class="">Food</a>
+          </li>
+          <li>
+            <a href="#drink_menu" class="">Drinks</a>
+          </li>
+          <li>
+            <a href="#fun" class="">Fun</a>
+          </li>
+          <li>
+            Since 2003
+          </li>
+        </menu>
+
       </nav>
       
-      <div id="side_nav" class="side_menu slide slide-up">
-        <ul class="dropdown_menu_main slide">
-          <!-- placeholder for dropdown menu in menu.js file-->
-        </ul>
-      </div>
-    
+      
+
     </header>
 
-
     <main>
+      
+      <div id="sidebar">
 
-      <!-- WELCOME HEADER -->
-      <div class="background_image">
-        <div id="index_welcome_header" class="welcome_header">
-          <div class="header_words container fade-in">
-            <h1>Welcome to Shamrock Jack's</h1>
-            <p>Since 2003, The Petzing family has welcomed visitors from near and far for Lunch, Dinner, a Guinness or Jameson in the Pub.</p>
-          </div>
-        </div>
-      </div>
-      <!-- END WELCOME HEADER -->
-      <!-- COVID ANNOUNCMENT -->
-      <div id="covid-announcment" class="container container_lh">
-        
-        <div class="foor-menu-link">
-          <a href="tostartshare.html">
-            <img src="img/foodmenulink.jpeg" alt="Shamrock Jack's logo">
-            <h1>Click me for the Menu</h1>
-          </a>
-        </div>
+        <section id="hours" class="blue">
 
-        <br><br>
-
-        <!---
-          <div>
-            <h2>
-              <a href="https://www.facebook.com/Shamrockjacks33/">
-                For pub event updates, please check out <img src=""><i class="fab fa-facebook-square icon"></i>
-              </a>
-            </h2>
-          </div>
-        --->
-        
-        <div class="container social_media_footer social-media-icons-container"></div>
-
-      </div>
-      <!-- END COVID ANNOUNCEMENT -->
-
-      <!-- Section D -->
-      <section class="sectionD grid grid-template-columns-985">
-        
-        <section id="sectionDhours" class="sub-sectionD container">
-
-          <h2>Daily Specials</h2>
-          
-          <ul style="margin-bottom:20px;">
-            <!--
-              <li style="padding-top:5px;">Wed: Live music from 6:00 pm - 8:00 pm</li>
-            -->
-            <li style="padding-top:5px;">Thurs: All Three Heads Brewery drafts are only $5</li>
-            <li style="padding-top:5px;">Fri: Stella Artois on draft for only $5</li>
-            <li style="padding-top:5px;">Sat: $3.50 Labatt bottles and drafts</li>
-            <li style="padding-top:5px;">
-              Sun: $6 Bloody Marys, $2.50 Gennys, $10 Jack Burgers, Half Price Wings
+          <h1>Hours</h1>
+  
+          <ul>
+            <li>
+              Mon: 11:30-8:00
+              </li>
+            <li>
+              Tue: 11:30-8:00
+            </li>
+            <li>
+              Wed: 11:30-8:00
+            </li>
+            <li>
+              Thur: 11:30-9:00
+            </li>
+            <li>
+              Fri: 11:30-9:00
+            </li>
+            <li>
+              Sat: noon-9:00
+            </li>
+            <li>
+              Sun: noon-8:00
             </li>
           </ul>
-          
-          <!--FB Events widget -->
-          <div class="fb-page" data-href="https://www.facebook.com/Shamrockjacks33/" data-tabs="timeline,events" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Shamrockjacks33/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Shamrockjacks33/">Shamrock Jack&#039;s Irish Pub</a></blockquote></div>
 
-        </section>
-
-
-        <section id="sectionDcontact" class="sub-sectionD container">
-          <div class="callus">
-            <h2>Drop Us a Line</h2>
-            <p>Don't be shy. Let us know if you have any questions, comments or suggestions!</p>
-            <div class="button_div">
-              <a href="contactus.html" class="button">Contact Us</a>
-            </div>
-          </div>
-          <hr>
-          <div class="hoursofoperation">
-            <h2>Hours of Operation</h2>
-            <!-- <p>(or until last call</p> -->
-            <ul>
-              <li>
-                Mon: 11:30 am - 8:00 pm
-              </li>
-              <li>
-                Tue: 11:30 am - 8:00 pm
-              </li>
-              <li>
-                Wed: 11:30 am - 8:00 pm
-              </li>
-              <li>
-                Thur: 11:30 am - 9:00 pm
-              </li>
-              <li>
-                Fri: 11:30 am - 9:00 pm
-              </li>
-              <li>
-                Sat: 12:00 pm - 9:00 pm
-              </li>
-              <li>
-                Sun: 12:00 pm - 8:00 pm
-              </li>
-              <li>
-                Above times are for regular dining.
-                <br>
-                Late night menu available Thursdays, Fridays, and Saturdays.
-                <br>
-                The pub is open until last call!
-              </li>
-            </ul>
-          </div>
-          
-        </section>
-
-      </section>
-      <!-- END Section D -->
-
-      <!-- Section A -->
-      <section id="sectionA" class="container container_lh grid grid-template-columns-985">
-        <div id="sectionAhead">
-          <header>
-            <h1>Introducing</h1>
-            <h3 class="fade-right">Our Story</h3>
-            <hr>
-          </header>
-        </div>
-      
-        <div id="sectionAbody" class="storyaboutus fade-left">
-          <p>
-            Shamrock Jack’s Irish Pub is an Irish family-owned Irish Pub and Restaurant blending the magical spirit
-            of Ireland with contemporary food and drink. We are located just a few minutes north of the City of
-            Rochester in Sea Breeze, New York, a bustling resort community on the shores of beautiful Lake Ontario.
-           </p>
-          <p>Spend the afternoon sipping pints on our expanded front porch or our back patio. Enjoy live music until the wee hours in our charming Irish pub, or have a delightful dinner with family and friends in one of our warm, welcoming dining rooms. Don’t forget to visit our resident Leprechaun just inside the front entrance!</p>
-          <p>We have won 2 awards - one for best Irish Pub in Rochester and the other for best late night menu - we never forget that our customers make us what we are and for that we are forever gratefull.</p>
-          <p>Come on in and try our famous delicious boneless wings and enjoy a pint with one of the Family.</p>
+          Above times are for regular dining.
           <br>
+          <br>
+          Late night menu available Thurs, Fri, Sat.
+          <br>
+          <br>
+          The pub is open until last call!
 
-          <div id="sectionAbutton" class="button_div">
-            <a href="aboutus.html" class="button">About Us</a>
-          </div>
-        </div>
-        <div id="sectionApic" class="fade-up">
-          <img src="/img/shamrocks_building.jpg" alt="">
-        </div>
-      </section>
-      <!-- END Section A -->
+        </section>
 
-      <!-- Section B Cards -->
-      <section class="sectionB cards">
-        <div id="menuPics" class="container_lh grid grid-template-3columns-985">
-          <div class="card card1 grid grid-template-2rows-985 fade-in">
-            <div id="words1" class="card_text card-piece">
-              <h3 class="fade-in">St. Practice Day<h3>
-              <p>The 17th of Every Month</p>
-              <p class="fade-left">“Practice” for St. Patrick’s Day 11 months of the year on the 17th of every month with Irish Food, Music & Drink Specials.</p>
-              <!--
-                <p class="fade-left">Choose from Corned Beef & Cabbage, a Reuben, Shepherd’s Pie, Guinness Beef Stew, Irish Nachos and more... Enjoyed along side a Guinness, Smithwick’s or Harp on Draft.</p>
-              -->
-            </div>
-            <div id="pic1" class="card_image card-piece">
-                <img src="/img/bar.jpg" alt="">
-            </div>
-          </div>
-          <div class="card card2 grid grid-template-2rows-985">
-            <div id="words2"  class="card_text card-piece">
-              <h3 class="fade-in">Shamrock's Famous Reuben</h3>
-              <p></p>
-              <p class="fade-right">Tender Corned Beef, Sauerkraut, Swiss Cheese, Creamy Thousand Island Dressing, on Toasted Rye. <br>(A Favorite of Coach Kelly)</p>
-            </div>
-            <div id="pic2"  class="card_image card-piece">
-              <img src="/img/reuben.jpg" alt="">
-            </div>
-          </div>
-          <div class="card card3 grid grid-template-2rows-985">
-            <div id="words3"  class="card_text card-piece">
-              <h3 class="fade-in">Shepherd’s Pie</h3>
-              <p></p>
-              <p class="fade-left">Braised Beef Shortrib, Celery Root, Peas, Carrots, Rich Guinness Sauce, Topped with Whipped Potatoes and Baked. Served with Choice of Soup or Salad.</p>
-            </div>
-            <div  id="pic3" class="card_image card-piece">
-              <img src="/img/shep-pie.jpg" alt="">
-            </div>
-          </div>
-          <div id="sectionBbutton" class="button_container">
-            <div id="tiles_button" class="button_div">
-              <a id="menuButton" href="tostartshare.html" class="button">Full Menu</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- END Section B CARDS -->
+        <section id="call">
+          
+          <h1>Call Us</h1>
+       
+          <a href="tel:+5853239310">
+            585.323.9310
+          </a>
+        
+        </section>
 
+        <section id="find" class="blue">
+          
+          <h1>Find Us</h1>
+       
+          <address>
+            
+            4554 Culver Road
+            <br>
+            Rochester, NY
+            <br>
+            14622
+            
+          </address>
 
-      <!-- Section C -->
-      <section class="sectionC">
-        <div class="container container_lh">
-          <header class="fade-down">
-            <p>TESTIMONIALS</p>
-            <h1>What People are Saying</h1>
-          </header>
-          <section class="tiles grid grid-template-columns-480">
-            <div class="tile tile1 slide-down">
-              <img src="/img/stars.png" alt="5 Star rating">
-              <h3>“Fantastic Food and Amazing Owners”</h3>
-              <p>"Shamrock Jacks has a wonderful atmosphere and fantastic food! The staff is friendly and courteous and the owners go out of their way to make your dining experience amazing! They definitely treat you like family here. The buffalo wings were some of the best we have had!"</p>
-              <a href="https://www.tripadvisor.com/ShowUserReviews-g48503-d822004-r493617796-Shamrock_Jack_s-Rochester_Finger_Lakes_New_York.html#review493617796"><p>Katherine M. - Tripadvisor</p></a>
-            </div>
-            <div class="tile tile2 slide-down">
-              <img src="/img/stars.png" alt="5 Star rating">
-              <h3>"Good Irish Bar/Restaurant"</h3>
-              <p>"You will feel at home here. Food & Stout, what else is there? Be here on St. Patrick's Day a must. Tent, music and friends gather here."</p>
-              <a href="https://www.tripadvisor.com/ShowUserReviews-g48503-d822004-r510161767-Shamrock_Jack_s-Rochester_Finger_Lakes_New_York.html#review510161767"><p>Swash9021 - Tripadvisor</p></a>
-            </div>
-            <div class="tile tile3 slide-down">
-              <img src="/img/stars.png" alt="5 Star rating">
-              <h3>“A Favorite "Go-To" that never disappoints”</h3>
-              <p>"Now newly renovated, Shamrock Jack's is a friendly spot frequented by those who enjoy a casually delightful bar and wonderful selections, from bar food to fine dining, all nicely prepared. Prices are very reasonable. We've eaten there over a dozen times and look forward to returning again soon!"</p>
-              <a href="https://www.tripadvisor.com/ShowUserReviews-g48503-d822004-r465951093-Shamrock_Jack_s-Rochester_Finger_Lakes_New_York.html#review465951093"><p>Ken S. - Tripadvisor</p></a>
-            </div>
-            <div class="tile tile4 slide-down">
-              <img src="/img/stars.png" alt="5 Star rating">
-              <h3>"Delightful"</h3>
-              <p>"It was a very busy Friday night, but we were seated right away, in the "library". Our server Tiara was at our table almost immediately, and was very attentive in spite of handling many other diners. My husband had the Philly cheesesteak and he said it was very, very good. A fun pub, with lots of nooks and crannies. We have enjoyed many other lunches and dinners there, and will continue to go back for the food & atmosphere."</p>
-              <a href="https://www.tripadvisor.com/ShowUserReviews-g48503-d822004-r463078348-Shamrock_Jack_s-Rochester_Finger_Lakes_New_York.html#review463078348"><p>DLAD - Tripadvisor</p></a>
-            </div>
-          </section>
-        </div>
-      </section>
-      <!-- END Section C -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.956766872369!2d-77.54716742497538!3d43.231366079613366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6c8372a4d1cdf%3A0x90660306055ca129!2sShamrock%20Jack&#39;s%20Irish%20Pub!5e0!3m2!1sen!2sus!4v1708827391196!5m2!1sen!2sus" width="280" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </section>
 
+        <section id="follow">
+          
+          <h1>Follow Us</h1>
+       
+          <img src="img/messenger.png">
+          <br><br>
 
-
-      <div class="google_map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.9569668157774!2d-77.54670368436905!3d43.23136188762319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6c8372a4d1cdf%3A0x90660306055ca129!2sShamrock+Jack&#39;s+Irish+Pub!5e0!3m2!1sen!2sus!4v1520631035099" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <img src="img/fb.png">
+          <br><br>
+          
+          <img src="img/insta.png">
+          <br><br>
+          
+        </section>
+        
       </div>
-    
+      <div id="main_content" class="white">
+      
+        <section id="events">
+          
+          <div id="event_grid">
+
+            <div class="row">
+              
+              <div id="cruel_summer" class="event blue">
+            
+                <a href="https://www.eventbrite.com/e/taylor-swift-tribute-band-cruel-summer-tickets-796154689107?aff=ebdsoporgprofile" target="_blank">
+                  <img src="img/cruel_summer.png" alt="Cruel Summer, March 14th">
+                  <span class="event_link">
+                    Click Here To Purchase Tickets
+                  </span>
+                </a>
+              
+              </div>
+
+              <div id="queen_flash" class="event blue">
+                <a href="https://www.eventbrite.com/e/queen-flash-tribute-to-queen-tickets-796170957767?aff=ebdsoporgprofile" target="_blank">
+                  <img src="img/queen_flash.png" alt="Cruel Summer, March 15th">
+                  <span class="event_link">
+                    Click Here To Purchase Tickets
+                  </span>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="grid_row">
+              
+              <div id="parade_day" class="blue">
+                
+                <h2>
+                  March 16th
+                  <br>
+                  Band Lineup
+                </h2>
+
+                <ul>
+                  <li>
+                    Peg &amp; The Fiddler - 10:00 AM
+                  </li>
+                  <li>
+                    Mighty Quinn - 11:30 AM
+                  </li>
+                  <li>
+                    Celtic Cross - 12:30 PM
+                  </li>
+                  <li>
+                    Uptown Groove - 3:00 PM
+                  </li>
+                  <li>
+                    Vinyl - 5:30 PM
+                  </li>
+                  <li>
+                    Sisters of Murphy - 8:00 PM
+                  </li>
+                </ul>
+                
+              </div>
+
+              <div id="st_patricks_day" class="blue">
+                
+                <h2>
+                  March 17th
+                  <br>
+                  Band Lineup
+                </h2>
+
+                <ul>
+                  <li>
+                    Jumbo Shrimp - 10:30 AM
+                  </li>
+                  <li>
+                    Virgil Cain - 1:00 PM
+                  </li>
+                  <li>
+                    Hey Mabel - 3:30 PM
+                  </li>
+                  <li>
+                    Celtic Cross - 6:00 PM
+                  </li>
+                  <li>
+                    Dial Up - 8:00 PM
+                  </li>
+                </ul>
+                
+              </div>
+
+            </div>
+        </div>
+
+        </section>
+
+        <section id="food_menu">
+          
+          <h1>Menu</h1>
+<!--
+          <menu class="menuToggle">
+            <li>
+              <button data-section="food_menu" data-subsection="starters" onclick="toggleMenu(this)">
+                Starters
+              </button>
+            </li>
+            <li>
+              <button data-section="food_menu" data-subsection="wings" onclick="toggleMenu(this)">
+                Wings
+              </button>
+            </li>
+            <li>
+              <button data-section="food_menu" data-subsection="soups" onclick="toggleMenu(this)">
+                Soups
+              </button>
+            </li>
+            <li>
+              <button data-section="food_menu" data-subsection="salads" onclick="toggleMenu(this)">
+                Salads
+              </button>
+            </li>
+            <li>
+              <button data-section="food_menu" data-subsection="flatbreads" onclick="toggleMenu(this)">
+                Flatbreads
+              </button>
+            </li>
+            <li>
+              <button data-subsection="food_menu" data-subsection="handhelds" onclick="toggleMenu(this)">
+                Handhelds
+              </button>
+            </li>
+            <li>
+              <button data-section="food_menu" data-subsection="entrees" onclick="toggleMenu(this)">
+                Entrees
+              </button>
+            </li>
+
+          </menu>
+-->
+          <div id="starters">
+            
+            <h2>Starters</h2>
+            
+            <ul class="notes"></ul>
+
+            <ul class="menu_list"></ul>
+            
+          </div>
+
+          <div id="wings" class="hide">
+            
+            <h2>Wings</h2>
+            
+            <ul class="notes"></ul>
+
+            <ul class="menu_list"></ul>
+            
+          </div>
+
+          <div id="soups" class="hide">
+            
+            <h2>Soups</h2>
+            
+            <ul class="notes"></ul>
+
+            <ul class="menu_list"></ul>
+            
+          </div>
+          
+          <div id="salads" class="hide">
+            
+            <h2>Salads</h2>
+            
+            <ul class="notes"></ul>
+
+            <ul class="menu_list"></ul>
+            
+          </div>
+
+          <div id="flatbreads" class="hide">
+            
+            <h2>Flatbreads</h2>
+            
+            <ul class="notes"></ul>
+
+            <ul class="menu_list"></ul>
+            
+          </div>
+
+          <div id="handhelds" class="hide">
+            
+            <h2>Handhelds</h2>
+            
+            <ul class="notes"></ul>
+
+            <ul class="menu_list"></ul>
+            
+          </div>
+
+          <div id="entrees" class="hide">
+            
+            <h2>Entrees</h2>
+            
+            <ul class="notes"></ul>
+
+            <ul class="menu_list"></ul>
+            
+          </div>
+
+        </section>
+
+        <section id="drink_menu">
+          
+          <h1>Drinks</h1>
+
+          <div id="drinks">
+            
+            <ul class="notes"></ul>
+
+            <ul class="menu_list"></ul>
+            
+          </div>
+
+        </section>
+
+        <section id="fun">
+          
+          <h1>There's Always Something Going On</h1>
+          
+          <div id="promotions">
+            
+            <ul class="notes"></ul>
+
+            <ul class="menu_list"></ul>
+            
+          </div>
+
+
+        </section>
+        
+
+      </div>
+      
     </main>
 
-    <footer>
-      <!-- place holder for footer -->
+    <footer class="blue">
+
+      <h1>Our Story</h1>
+      
+      <p>
+        Shamrock Jack’s Irish Pub is an Irish family-owned Irish Pub and Restaurant blending the magical spirit of
+        Ireland with contemporary food and drink. We are located just a few minutes north of the City of Rochester
+        in Sea Breeze, New York, a bustling resort community on the shores of beautiful Lake Ontario.
+      </p>
+      
+      <p>
+        Spend the afternoon sipping pints on our expanded front porch or our back patio. Enjoy live music until the
+        wee hours in our charming Irish pub, or have a delightful dinner with family and friends in one of our
+        warm, welcoming dining rooms. Don’t forget to visit our resident Leprechaun just inside the front entrance!
+      </p>
+      
+      <p>
+        We have won 2 awards - one for best Irish Pub in Rochester and the other for best late night menu - we
+        never forget that our customers make us what we are and for that we are forever gratefull.
+      </p>
+      
+      <p>
+        Come on in and try our famous delicious boneless wings and enjoy a pint with one of the Family.
+      </p>
+
     </footer>
+    
+    <script type="text/javascript">
+      
+      const xhttp = new XMLHttpRequest();
+
+      xhttp.onload = function(){
+        
+        const menu = JSON.parse(this.responseText);
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/shamrock/menu.js"></script>
-    <script type="text/javascript" src="js/shamrock/main.js"></script>
+        for(const[k,v] of Object.entries(menu))
+        {
+          for(const[k2,v2] of Object.entries(v))
+          {
+            parseMenuSection(k2,v2);
+          }
+        }
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="7JqvQ80N"></script>
+      }
+
+      xhttp.open('GET', 'js/menu.json');
+      xhttp.send();
+
+      function parseMenuSection(section, obj)
+      {
+        const notes = obj.notes;
+        const items = obj.items;
+        const button = document.querySelector('button');
+
+        let note_text = '';
+        let item_text = '';
+        
+        notes.forEach(function(item,index,arr){
+         
+          note_text += '<li>' + arr[index] + '</li>';
+          
+        });
+
+        items.forEach(function(item,index,arr){
+         
+          item_text += '<li class="menu-item">';
+          item_text += '<h3 class="item-name">' + arr[index].name + '<span class="item_price">' + arr[index].price + '</span></h3>';
+          item_text += '<div class="item-description">' + arr[index].desc + '</div>';
+          item_text += '</li>';
+          
+        });
+
+        document.querySelector('div#' + section + ' > ul.notes').innerHTML = note_text;
+        document.querySelector('div#' + section + ' > ul.menu_list').innerHTML = item_text;
+        
+
+        //button.addEventListener('click',toggleMenu);
+
+      }
+      
+/*
+      function toggleMenu(btn)
+      {
+        let section = btn.getAttribute('data-section');
+        let sub_section = btn.getAttribute('data-subsection');
+
+        document.querySelectorAll('section#' + section + ' > div').forEach(() => {
+        
+          console.log(this);
+          this.classList.add('hide');
+          
+        });
+        
+        document.querySelector('section#' + section + ' div#' + sub_section).classList.remove('hide');
+
+        return false;
+      }
+*/
+    </script>
+
   </body>
+
 </html>
