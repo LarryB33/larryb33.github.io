@@ -313,7 +313,69 @@
                                             "desc":   ""
                                           }
                                         ]
+                            },
+              "irish":   {
+                            "notes":  [],
+                            "items":  [
+                                      {
+                              "name":   "Potato Chowdah",
+                              "price":  "",
+                              "desc":   "Cream based chowder with potatoes, bacon, cheddar cheese, onions, carrots, and celery."
+                            },
+                                      {
+                              "name":   "Pub Pretzels",
+                              "price":  "",
+                              "desc":   "Soft pretzel sticks with topped with sea salt and served with your choice of our house made cheese sauce or whole grain mustard."
+                            },
+                                      {
+                              "name":   "Jack's Reuben",
+                              "price":  "",
+                              "desc":   "Corned beef with sauerkraut, Swiss cheese, and Thousand Island dressing on toasted marble rye served with Irish potatoes."
+                            },
+                                      {
+                              "name":   "Deli Style Reuben",
+                              "price":  "",
+                              "desc":   "Corned beef with creamy coleslaw, Swiss cheese, red onion, and Thousand Island dressing served on toasted marble rye with Irish potatoes."
+                            },
+                                          {
+                                            "name":   "Pot Roast Grilled Cheese",
+                                            "price":  "",
+                                            "desc":   "Braised Certified Angus Beef® pot roast, caramelized onions, American cheese, cheddar jack cheese, and horseraddish sauce on grilled sourdough bread."
+                                          },
+                                      {
+                              "name":   "Corned Beef &amp; Cabbage",
+                              "price":  "",
+                              "desc":   "Our famous slow cooked corned beef served with fresh cabbage, carrots, and Irish potatoes."
+                            },
+                                      {
+                              "name":   "Cottage Pie",
+                              "price":  "",
+                              "desc":   "Certified Angus Beef Short Rib, celery, peas, carrots, and onions in a rich Guinness gravy topped with smashed potatoes and cheddar jack cheese."
+                            },
+                                                                  {
+                              "name":   "Guinness Beef Stew",
+                              "price":  "",
+                              "desc":   "Our signature Certifies Angus Beef sirloin tips served with our house made beef gravy with a wee bit of Guinness, fresh carrots, celery, peas, and onions served over egg noodles."
+                            },
+
+                                                                 {
+                              "name":   "Pot Roast Dinner",
+                              "price":  "",
+                              "desc":   "Our slow cooked pot roast topped with our house made Guinness gravy served with Irish potatoes and carrots."
+                            },
+ 
+                                                                 {
+                              "name":   "Baileys Irish Cheesecake",
+                              "price":  "",
+                              "desc":   ""
+                            },
+                                                                 {
+                              "name":   "Andes Mint Chocolate Pie",
+                              "price":  "",
+                              "desc":   ""
                             }
+                                    ]
+                          }
                             
             }
 }
