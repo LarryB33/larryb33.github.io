@@ -293,6 +293,11 @@
         margin-bottom:10px;
         font-size:1.20em;
       }
+      
+      .notes
+      {
+        font-weight:bold;
+      }
     </style>
   </head>
   <body>
@@ -420,18 +425,6 @@
 
             <div class="row">
               
-              <div id="cruel_summer" class="event blue">
-            
-                <a href="https://www.eventbrite.com/e/taylor-swift-tribute-band-cruel-summer-tickets-796154689107?aff=ebdsoporgprofile" target="_blank">
-                  <img src="img/cruel_summer.png" alt="Cruel Summer, March 14th">
-                  <span class="event_link">
-                    Click Here To Purchase Tickets
-                  </span>
-                </a>
-                <span class="disclaimer">
-                One chaperone required for each attendee under 21 for this event.
-                </span>
-              </div>
 
               <div id="queen_flash" class="event blue">
                 <a href="https://www.eventbrite.com/e/queen-flash-tribute-to-queen-tickets-796170957767?aff=ebdsoporgprofile" target="_blank">
@@ -628,13 +621,22 @@
             
             <h2>Irish Menu</h2>
             
-            <strong>Available 3/13 - 3/17</strong>
-
             <ul class="notes"></ul>
 
             <ul class="menu_list"></ul>
             
           </div>
+
+          <div id="irish_bk">
+            
+            <h2>St. Patrick's Day Breakfast Menu</h2>
+            
+            <ul class="notes"></ul>
+
+            <ul class="menu_list"></ul>
+            
+          </div>
+
 <!--
           <div id="starters">
             
@@ -719,7 +721,7 @@
             <ul class="menu_list"></ul>
             
           </div>
--->
+
         </section>
 
         <section id="fun">
@@ -737,6 +739,7 @@
 
         </section>
         
+-->
 
       </div>
       
@@ -793,6 +796,7 @@
 
       function parseMenuSection(section, obj)
       {
+        console.log(obj);
         const notes = obj.notes;
         const items = obj.items;
         const button = document.querySelector('button');
