@@ -1,111 +1,91 @@
 
 {
   "menu"  : {
-              "promotions": {
-                              "notes":  [],
-                              "items":  [
-                                          {
-                                            "name":   "St. Patrick's Day",
-                                            "price":  "",
-                                            "desc":   "The biggest St. Patrick's Day celebration in Rochester!"
-                                          },
-                                          {
-                                            "name":   "St. 'Practice' Day",
-                                            "price":  "",
-                                            "desc":   "On the 17th of every month, we have an Irish menu, along with drink specials on Guinness, Smithwick, Harp, and Roe &amp; Co Irish whiskey."
-                                          },
-                                          {
-                                            "name":   "Bingo",
-                                            "price":  "",
-                                            "desc":   "The last Sunday of every month."
-                                          },
-                                          {
-                                            "name":   "Whiskey Wednesday",
-                                            "price":  "",
-                                            "desc":   "Free whiskey tastings on the first Wednesday of every month."
-                                          },
-                                          {
-                                            "name":   "Live Music",
-                                            "price":  "",
-                                            "desc":   "Every Wednesday night!"
-                                          }
-                                        ]
-                            },
-              "drinks": {
-                              "notes":  [],
-                              "items":  [
-                                          {
-                                            "name":   "We have Guinness, Harp, and Smithwick's on draft, along with a rotating selection of other beers!",
-                                            "price":  "",
-                                            "desc":   ""
-                                          },
-                                          {
-                                            "name":   "We carry a wide range of Irish whiskey, including Jameson, Roe &amp; Co, and Lost Irish, along with a wide range of other whiskies and spirits!",
-                                            "price":  "",
-                                            "desc":   ""
-                                          }
-                                        ]
-                            },
               "irish":   {
-                            "notes":  [],
+                            "notes":  ["Available on March 13-17th"],
                             "items":  [
                                       {
-                              "name":   "Potato Chowdah",
-                              "price":  "",
-                              "desc":   "Cream based chowder with potatoes, bacon, cheddar cheese, onions, carrots, and celery."
-                            },
+                                      "name":   "Potato Chowdah",
+                                      "price":  "",
+                                      "desc":   "Cream based chowder with potatoes, bacon, cheddar cheese, onions, carrots, and celery."
+                                      },
                                       {
-                              "name":   "Pub Pretzels",
-                              "price":  "",
-                              "desc":   "Soft pretzel sticks with topped with sea salt and served with your choice of our house made cheese sauce or whole grain mustard."
-                            },
+                                      "name":   "Pub Pretzels",
+                                      "price":  "",
+                                      "desc":   "Soft pretzel sticks with topped with sea salt and served with your choice of our house made cheese sauce or whole grain mustard."
+                                      },
                                       {
-                              "name":   "Jack's Reuben",
-                              "price":  "",
-                              "desc":   "Corned beef with sauerkraut, Swiss cheese, and Thousand Island dressing on toasted marble rye served with Irish potatoes."
-                            },
+                                      "name":   "Jack's Reuben",
+                                      "price":  "",
+                                      "desc":   "Corned beef with sauerkraut, Swiss cheese, and Thousand Island dressing on toasted marble rye served with Irish potatoes."
+                                      },
                                       {
-                              "name":   "Deli Style Reuben",
-                              "price":  "",
-                              "desc":   "Corned beef with creamy coleslaw, Swiss cheese, red onion, and Thousand Island dressing served on toasted marble rye with Irish potatoes."
-                            },
-                                          {
-                                            "name":   "Pot Roast Grilled Cheese",
-                                            "price":  "",
-                                            "desc":   "Braised Certified Angus Beef® pot roast, caramelized onions, American cheese, cheddar jack cheese, and horseraddish sauce on grilled sourdough bread."
-                                          },
+                                      "name":   "Deli Style Reuben",
+                                      "price":  "",
+                                      "desc":   "Corned beef with creamy coleslaw, Swiss cheese, red onion, and Thousand Island dressing served on toasted marble rye with Irish potatoes."
+                                      },
                                       {
-                              "name":   "Corned Beef &amp; Cabbage",
-                              "price":  "",
-                              "desc":   "Our famous slow cooked corned beef served with fresh cabbage, carrots, and Irish potatoes."
-                            },
+                                      "name":   "Pot Roast Grilled Cheese",
+                                      "price":  "",
+                                      "desc":   "Braised Certified Angus Beef® pot roast, caramelized onions, American cheese, cheddar jack cheese, and horseraddish sauce on grilled sourdough bread."
+                                      },
                                       {
-                              "name":   "Cottage Pie",
-                              "price":  "",
-                              "desc":   "Certified Angus Beef Short Rib, celery, peas, carrots, and onions in a rich Guinness gravy topped with smashed potatoes and cheddar jack cheese."
-                            },
-                                                                  {
-                              "name":   "Guinness Beef Stew",
-                              "price":  "",
-                              "desc":   "Our signature Certifies Angus Beef sirloin tips served with our house made beef gravy with a wee bit of Guinness, fresh carrots, celery, peas, and onions served over egg noodles."
-                            },
-
-                                                                 {
-                              "name":   "Pot Roast Dinner",
-                              "price":  "",
-                              "desc":   "Our slow cooked pot roast topped with our house made Guinness gravy served with Irish potatoes and carrots."
-                            },
- 
-                                                                 {
-                              "name":   "Baileys Irish Cheesecake",
-                              "price":  "",
-                              "desc":   ""
-                            },
-                                                                 {
-                              "name":   "Andes Mint Chocolate Pie",
-                              "price":  "",
-                              "desc":   ""
-                            }
+                                      "name":   "Corned Beef &amp; Cabbage",
+                                      "price":  "",
+                                      "desc":   "Our famous slow cooked corned beef served with fresh cabbage, carrots, and Irish potatoes."
+                                      },
+                                      {
+                                      "name":   "Cottage Pie",
+                                      "price":  "",
+                                      "desc":   "Certified Angus Beef Short Rib, celery, peas, carrots, and onions in a rich Guinness gravy topped with smashed potatoes and cheddar jack cheese."
+                                      },
+                                      {
+                                      "name":   "Guinness Beef Stew",
+                                      "price":  "",
+                                      "desc":   "Our signature Certifies Angus Beef sirloin tips served with our house made beef gravy with a wee bit of Guinness, fresh carrots, celery, peas, and onions served over egg noodles."
+                                      },
+                                      
+                                      {
+                                      "name":   "Pot Roast Dinner",
+                                      "price":  "",
+                                      "desc":   "Our slow cooked pot roast topped with our house made Guinness gravy served with Irish potatoes and carrots."
+                                      },
+                                      
+                                      {
+                                      "name":   "Baileys Irish Cheesecake",
+                                      "price":  "",
+                                      "desc":   ""
+                                      },
+                                      {
+                                      "name":   "Andes Mint Chocolate Pie",
+                                      "price":  "",
+                                      "desc":   ""
+                                      }
+                                    ]
+                          },
+              "irish_bk":   {
+                            "notes":  ["Available on March 17th only"],
+                            "items":  [
+                                      {
+                                      "name":   "Breakfast Sandwich",
+                                      "price":  "",
+                                      "desc":   ""
+                                      },
+                                      {
+                                      "name":   "Jameson French Toast",
+                                      "price":  "",
+                                      "desc":   ""
+                                      },
+                                      {
+                                      "name":   "Corned Beef Hash with Homefries and Eggs",
+                                      "price":  "",
+                                      "desc":   ""
+                                      },
+                                      {
+                                      "name":   "Shamrock Breakfast Plate",
+                                      "price":  "",
+                                      "desc":   ""
+                                      }
                                     ]
                           }
                             
